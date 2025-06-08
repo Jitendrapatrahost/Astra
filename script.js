@@ -309,6 +309,10 @@ function takeCommand(message) {
     window.open("https://play.google.com", "_blank");
     typeMessage("Opening Playstore...");
   }
+  else if (message.includes("open cms")) {
+    typeMessage("Opening CMS...");
+    window.open("https://cms.gift.edu.in", "_blank");
+  }
   else if (message.includes("dark mode")) {
     document.body.classList.add("dark-mode");
     typeMessage("Dark mode activated.");
@@ -348,11 +352,17 @@ function takeCommand(message) {
 const placeholders = [
   "Ask anything...",
   "How can I help you...",
+  "Ask anything...",
   "Tell me a joke...",
+  "Ask anything...",
   "Calculate...",
+  "Ask anything...",
   "Open Youtube...",
+  "Ask anything...",
   "Open Facebook...",
+  "Ask anything...",
   "Open Instagram..."
+  "Ask anything...",
 ];
 
 let index = 0;
